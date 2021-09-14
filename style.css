@@ -25,3 +25,16 @@ p#author {
     font-size: 12px;
 }
 
+span#author-name {
+    color:blue;
+}
+
+img#icon {
+    width: 19px;
+    margin-left: 5px;
+}
+
+div#author-box {
+    display: flex;
+}
+
