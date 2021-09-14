@@ -1,10 +1,12 @@
-fetch('https://api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=20')
+fetch('https://api.giphy.com/v1/gifs/random?api_key=RlwJ3OH65uXJERrXizegU38c7EH31JF1&tag=&rating=g')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
-        document.getElementById("asset-image").innerHTML = `
-        <img class="asset-img" src="${data.assets[0].image_url}" />
-        `
-        document.getElementById("asset-title").textContent = data.assets[0].name
 
+        console.log(data)
+
+        document.getElementById("author").textContent = `Via ${data.data.user.display_name} on GIPHY`
+
+        document.getElementById("gif-container").innerHTML = `
+        <img src="${data.data.images.downsized.url}" />
+        `
     })
