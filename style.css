@@ -22,7 +22,7 @@ p#author {
     color: white;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 span#author-name {
@@ -30,11 +30,13 @@ span#author-name {
 }
 
 img#icon {
-    width: 19px;
-    margin-left: 5px;
+    width: 22px;
+    cursor: pointer;
+    
 }
 
 div#author-box {
     display: flex;
+    justify-content: space-between;
 }
 
