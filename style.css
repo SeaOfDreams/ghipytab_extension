@@ -29,9 +29,10 @@ span#author-name {
     color:blue;
 }
 
-img#icon {
+a#icon {
     width: 22px;
     cursor: pointer;
+    align-self: center;
     
 }
 

@@ -5,7 +5,7 @@ fetch('https://api.giphy.com/v1/gifs/random?api_key=RlwJ3OH65uXJERrXizegU38c7EH3
         console.log(data)
 
         let a = document.getElementById("icon")
-        a.setAttribute = ("href", "data.data.user.profile_url")
+        a.href = data.data.user.profile_url
 
         if(data.data.user.display_name) {
             document.getElementById("author").textContent = `Via ${data.data.user.display_name} on GIPHY`
